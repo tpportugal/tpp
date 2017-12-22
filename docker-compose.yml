@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  nginx:
+    hostname: nginx
+    image: nginx:mainline-alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    links:
+      - web
+    ports:
+      - "80"
+    restart: always
+  db:
+    image: postgres
+  web:
+    hostname: web
+    build: .
+    command: gunicorn -b 0.0.0.0:29000 api.wsgi:application --reload
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    links:
+      - redis
+    restart: always
+  celery:
+    hostname: celery
+    build: .
+    command: celery -A background_worker worker -B -l info
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    links:
+      - redis
+    restart: always
+  redis:
+    image: redis:3.2-alpine
+    restart: always

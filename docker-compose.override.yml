@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    hostname: web
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    depends_on:
+      - db
+    links:
+      - redis
+    ports:
+     - 8000:8000
+    environment:
+     DEBUG: 'true'
+    restart: always

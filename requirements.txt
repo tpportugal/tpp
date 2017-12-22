@@ -1,0 +1,10 @@
+Django==2.0
+django-filter>=1.1.0
+djangorestframework==3.7.3
+redis==2.10.6
+celery==4.1.0
+psycopg2==2.7.3.2
+gunicorn==19.7.1
+pdfquery==0.4.3
+graphene-django>=2.0
+graphene>=2.0.1
