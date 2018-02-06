@@ -23,8 +23,16 @@ docker-compose >= 1.18
 
 ### Instalação
 Sigam as instruções de comandos dadas abaixo:
+- Façam um clone do repositório (SSH ou HTTPS)
 ```
+# SSH
 git clone git@github.com:glaand/tpp.git
+# ou
+#HTTPS
+git clone https://github.com/glaand/tpp.git
+```
+- Entrem na pasta, façam a migração do projeto e iniciem a aplicação.
+```
 cd tpp/
 docker-compose run --rm web python manage.py migrate
 docker-compose up
