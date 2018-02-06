@@ -17,8 +17,8 @@ Os dados iniciais disponíveis neste projeto depois das migrações são:
 
 ### Requísitos
 ```
-docker
-docker-compose
+docker >= 2
+docker-compose >= 1.18
 ```
 
 ### Instalação
