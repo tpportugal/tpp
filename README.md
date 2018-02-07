@@ -1,6 +1,8 @@
 # TPP API
 #### Aplicação para unificar os transportes públicos de portugal
 ***
+#### Canais de comunicação  
+Slack --> https://join.slack.com/t/tpportugal/shared_invite/enQtMzEwOTI3ODg0MDk2LTZmNjYxOWVmZTBkN2EwNWUzMGFhOGQ2MWM0YmQ4NGUxMTU1ZjcwMDQxMDljMzU0Njg0ODcwOGIyODUxMjIzNmI
 ### Introdução
 A intenção deste projeto é fornecer uma interface comum para o sistema de transporte públicos em Portugal.
 
