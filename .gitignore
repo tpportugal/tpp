@@ -190,3 +190,4 @@ background_worker/*.ipynb
 .vscode/
 
 credentials.json
+maps/*

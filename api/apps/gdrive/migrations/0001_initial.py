@@ -2,8 +2,6 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-import gdstorage.storage
-
 
 class Migration(migrations.Migration):
 
@@ -19,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
                 ('map_name', models.CharField(max_length=200)),
-                ('map_data', models.FileField(storage=gdstorage.storage.GoogleDriveStorage(), upload_to='maps')),
+                ('map_data', models.FileField(upload_to='maps')),
                 ('company', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='companies.Company')),
             ],
         ),
