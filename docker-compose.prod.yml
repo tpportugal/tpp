@@ -5,11 +5,12 @@ services:
     hostname: nginx
     image: nginx:mainline-alpine
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - /var/apps/tpp/nginx.conf:/etc/nginx/nginx.conf
     links:
       - web
     ports:
-      - "80"
+      - '80:80'
+      - '443:443'
     restart: always
   db:
     image: postgres
@@ -18,7 +19,7 @@ services:
     build: .
     command: gunicorn -b 0.0.0.0:29000 api.wsgi:application --reload
     volumes:
-      - .:/code
+      - /var/apps/tpp:/code
     depends_on:
       - db
     links:
@@ -29,7 +30,7 @@ services:
     build: .
     command: celery -A background_worker worker -B -l info
     volumes:
-      - .:/code
+      - /var/apps/tpp:/code
     depends_on:
       - db
     links:
