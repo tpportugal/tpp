@@ -1,0 +1,3 @@
+[submodule "api/vendors/centraldedados/codigos_postais"]
+	path = api/vendors/centraldedados/codigos_postais
+	url = https://github.com/centraldedados/codigos_postais.git
