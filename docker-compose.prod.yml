@@ -6,6 +6,7 @@ services:
     image: nginx:mainline-alpine
     volumes:
       - /var/apps/tpp/nginx.conf:/etc/nginx/nginx.conf
+      - /var/apps/tpp/static:/code/static
     links:
       - web
     ports:
