@@ -189,3 +189,4 @@ background_worker/*.xml
 background_worker/*.ipynb
 .vscode/
 
+credentials.json

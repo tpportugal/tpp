@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'api.apps.schedules',
     'api.apps.stations',
     'api.apps.transports',
+    'api.apps.gdrive',
 ]
 
 MIDDLEWARE = [
