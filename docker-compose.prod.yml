@@ -7,7 +7,6 @@ services:
     volumes:
       - /var/apps/tpp/nginx.conf:/etc/nginx/nginx.conf
       - /var/apps/tpp/static:/code/static
-      - /var/apps/tpp/maps:/code/maps
     links:
       - web
     ports:
