@@ -3,7 +3,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import include
 from graphene_django.views import GraphQLView
-from api.apps.gdrive.views import upload_timetable
+from api.models.gdrive.views import upload_timetable
 
 
 urlpatterns = [

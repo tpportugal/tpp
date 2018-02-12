@@ -16,10 +16,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'api.apps.geographical.districts',
-    'api.apps.geographical.cities',
-    'api.apps.agencies',
-    'api.apps.gdrive',
+    'api.models.geographical.districts',
+    'api.models.geographical.cities',
+    'api.models.agencies',
+    'api.models.gdrive',
 ]
 
 MIDDLEWARE = [

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from api.apps.agencies.models import Agency
+from api.models.agencies.models import Agency
 
 
 @admin.register(Agency)

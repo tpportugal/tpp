@@ -3,8 +3,8 @@ import uuid
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-from api.apps.gdrive.forms import TimetableForm
-from api.apps.gdrive.models import Timetable
+from api.models.gdrive.forms import TimetableForm
+from api.models.gdrive.models import Timetable
 
 
 def upload_timetable(request):
