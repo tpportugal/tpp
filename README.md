@@ -28,10 +28,10 @@ Sigam as instruções de comandos dadas abaixo:
 - Façam um clone do repositório (SSH ou HTTPS)
 ```
 # SSH
-git clone git@github.com:glaand/tpp.git
+git clone --recurse-submodules git@github.com:glaand/tpp.git
 # ou
 #HTTPS
-git clone https://github.com/glaand/tpp.git
+git clone --recurse-submodules https://github.com/glaand/tpp.git
 ```
 - Entrem na pasta, façam a migração do projeto e iniciem a aplicação.
 ```
