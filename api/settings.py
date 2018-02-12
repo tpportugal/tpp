@@ -17,7 +17,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'api.apps.cities',
-    'api.apps.communities',
     'api.apps.agencies',
     'api.apps.districts',
     'api.apps.schedules',
