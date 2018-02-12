@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('slug', models.SlugField()),
                 ('name', models.CharField(max_length=50)),
-                ('district', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='geographical.districts.District')),
+                ('district', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='districts.District')),
             ],
         ),
         migrations.RunSQL(
