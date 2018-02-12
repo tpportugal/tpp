@@ -19,8 +19,6 @@ INSTALLED_APPS = [
     'api.apps.geographical.districts',
     'api.apps.geographical.cities',
     'api.apps.agencies',
-    'api.apps.schedules',
-    'api.apps.stations',
     'api.apps.gdrive',
 ]
 
