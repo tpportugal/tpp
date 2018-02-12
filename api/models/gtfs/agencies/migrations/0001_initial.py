@@ -20,6 +20,351 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.RunSQL(
-            "INSERT INTO {0}_city (slug, name, district_id) SELECT 'abrantes' as slug, 'Abrantes' as name, district.id FROM districts_district as district WHERE district.slug = 'santarem';".format(
-                'cities')),
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (133, 'ribatejana', 'Ribatejana');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (134, 'rodonorte', 'RodoNorte');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (135, 'rodoeste', 'Rodoeste');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (136, 'rodoviaria-da-beira-interior', 'Rodoviária da Beira Interior');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (137, 'rodoviaria-de-lisboa', 'Rodoviária de Lisboa');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (138, 'rodoviaria-do-alentejo', 'Rodoviária do Alentejo');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (139, 'rodoviaria-do-tejo', 'Rodoviária do Tejo');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (142, 'salvador-alves-pereira', 'Salvador Alves Pereira');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (143, 'santos', 'Santos');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (144, 'scotturb', 'Scotturb');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (148, 'topcar', 'TopCar');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (149, 'trancolvia', 'Trancolvia');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (150, 'transcovizela', 'Transcovizela');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (151, 'transdev', 'Transdev');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (157, 'turilis', 'Turilis');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (158, 'turitalefe', 'Turitalefe');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (159, 'uniao-de-satao-e-aguiar-e-beira', 'União de Sátão e Aguiar e Beira');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (161, 'valpibus', 'ValpiBus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (162, 'varela-companhia', 'Varela&Companhia');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (163, 'verde-minho', 'Verde Minho');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (164, 'vimeca-tranportes', 'Vimeca Tranportes');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (165, 'viuva-monteira', 'Viúva Monteira');".format(
+                'agencies')),
+        migrations.RunSQL("INSERT INTO {0}_agency (id, slug, name) VALUES (166, 'vtbus', 'vtbus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (128, 'moises-correia-de-oliveira', 'Moises Correia de Oliveira');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (85, 'arriva-portugal', 'Arriva Portugal');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (88, 'auto-viacao-da-murtosa', 'Auto Viação da Murtosa');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (106, 'urbanos-de-vila-real', 'Urbanos de Vila Real');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (110, 'empresa-de-transportes-gondomarense', 'Empresa de Transportes Gondomarense');".format(
+                'agencies')),
+        migrations.RunSQL("INSERT INTO {0}_agency (id, slug, name) VALUES (167, 'renex', 'RENEX');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (115, 'espirito-santo', 'Espirito Santo - Autocarros de Gaia');".format(
+                'agencies')),
+        migrations.RunSQL("INSERT INTO {0}_agency (id, slug, name) VALUES (168, 'avic', 'AVIC');".format('agencies')),
+        migrations.RunSQL("INSERT INTO {0}_agency (id, slug, name) VALUES (169, 'autna', 'Autna');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (171, 'aveirobus', 'AveiroBus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (172, 'tus', 'Transportes Urbanos de S. João da Madeira');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (173, 'tuaz', 'Transportes Urbanos de Azeméis');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (174, 'tuf', 'Transportes Urbanos de Famalicão');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (176, 'anadiasim', 'AnadiaSim');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (177, 'anc', 'A. Nogueira da Costa');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (178, 'barquense', 'Empresa de Transportes Barquense');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (179, 'trevo', 'Transportes Rodoviários de Évora');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (180, 'avs', 'Auto Viação do Souto');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (181, 'urbmarco', 'UrbMarco');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (182, 'urbcondeixa', 'UrbCondeixa');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (183, 'tucab', 'Transportes Urbanos de Castelo Branco');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (184, 'giro', 'GIRO Transportes Urbanos de Albufeira');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (160, 'utc', 'União de Transportes dos Carvalhos');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (156, 'tub', 'Transportes Urbanos de Braga');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (187, 'smm', 'Serviço de Mobilidade do Mondego');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (188, 'salvador', 'Salvador Transportes');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (190, 'stub', 'Serviço de Transportes Urbanos de Bragança');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (191, 'tumg', 'Transportes Urbanos da Marinha Grande');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (193, 'rodoviaria-do-lis', 'Rodoviária do Lis');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (194, 'internorte', 'InterNorte');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (195, 'vaivem', 'Vai e Vem Portimão');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (196, 'proximo', 'Próximo - Transportes Urbanos de Faro');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (83, 'albano-esteves-martins-filhos-lda', 'Albano Esteves Martins & Filhos, Lda.');".format(
+                'agencies')),
+        migrations.RunSQL("INSERT INTO {0}_agency (id, slug, name) VALUES (84, 'alsa', 'Alsa');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (130, 'mgc', 'MGC Transportes');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (86, 'auto-tranportadora-porto-santo', 'Auto Tranportadora Porto Santo');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (89, 'autobus', 'Autobus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (98, 'avenidas-do-tempo', 'Avenidas do Tempo');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (100, 'barraqueiro', 'Barraqueiro');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (101, 'barraqueiro-oeste', 'Barraqueiro Oeste');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (102, 'boa-viagem', 'Boa Viagem');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (103, 'caetano-cascao-e-linhares', 'Caetano,Cascão e Linhares');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (104, 'carris', 'Carris');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (105, 'cisterbus', 'Cisterbus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (107, 'courense', 'Courense');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (108, 'craveiro-cordeiro', 'Craveiro & Cordeiro');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (109, 'e-a-v-t', 'E.A.V.T');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (111, 'empresas-berrelhas-da-camionagem', 'Empresas Berrelhas da Camionagem');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (112, 'empresa-de-automoveis-do-canico', 'Empresa de Autómoveis do Caniço');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (113, 'empresa-de-viacao-barranquense', 'Empresa de Viação Barranquense');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (114, 'empresa-hoteleira-do-geres', 'Empresa Hoteleira do Gerês');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (116, 'estremadura', 'Estremadura');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (120, 'isodoro-duarte', 'Isodoro Duarte');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (121, 'joalto', 'Joalto');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (122, 'joalto-douro', 'Joalto Douro');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (123, 'joalto-mondego', 'Joalto Mondego');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (124, 'litoral-norte', 'Litoral Norte');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (125, 'lopes-filhos', 'Lopes&Filhos');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (126, 'maia-tranportes', 'Maia Tranportes');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (127, 'marques', 'Marques');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (129, 'mondinense', 'Mondinense');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (132, 'resende', 'Resende');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (141, 'smtcb', 'S.M. Transportes Colectivos do Barreiro');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (146, 'smtuc', 'S.M. Transportes Urbanos de Coimbra');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (198, 'tut-torres-vedras', 'Transportes Urbanos de Torres Vedras');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (154, 'tust', 'Transportes Urbanos de Santo Tirso');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (82, 'ava', 'Auto Viação Aveirense');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (95, 'auto-viacao-pacense', 'Auto Viação Pacense');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (92, 'auto-viacao-do-tamega', 'Auto Viação do Tamega');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (91, 'auto-viacao-do-minho', 'Auto Viação do Minho');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (93, 'auto-viacao-feirense', 'Auto Viação Feirense');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (96, 'auto-viacao-landim', 'Auto Viação Landim');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (155, 'stuv', 'Serviço de Transportes Urbanos de Viseu');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (140, 'sam', 'Sociedade de Automóveis da Madeira');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (197, 'tua-almeirim', 'Transportes Urbanos de Almeirim');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (189, 'tuc-chaves', 'Transportes Urbanos de Chaves');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (119, 'horarios-funchal', 'Horários do Funchal');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (170, 'rne', 'Rede Nacional de Expressos');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (87, 'auto-transportes-do-fundao', 'Auto Transportes do Fundão');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (175, 'tug-guimaraes', 'Transurbanos de Guimarães');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (117, 'ev-mafrense', 'Empresa de Viação Mafrense');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (118, 'eva', 'EVA Transportes');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (147, 'stcp', 'Sociedade de Transportes Colectivos do Porto');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (199, 'covibus', 'CoviBus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (192, 'mobilis', 'Mobilis - Transportes Urbanos de Leiria');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (200, 'mts', 'Metro Transportes do Sul');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (201, 'metropolitano-de-lisboa', 'Metropolitano de Lisboa');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (202, 'metro-do-porto', 'Metro do Porto');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (203, 'fertagus', 'Fertagus');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (204, 'cp', 'CP - Comboios de Portugal');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (205, 'tul', 'Transportes Urbanos de Loulé');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (206, 'citiexpress', 'CitiExpress');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (207, 'frota-azul', 'Frota Azul');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (208, 'tst', 'Transportes Sul do Tejo');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (209, 'eba', 'EBA Transportes');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (210, 'transtejo', 'Transtejo');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (211, 'soflusa', 'Soflusa');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (212, 'rodoviaria-do-oeste', 'Rodoviária do Oeste');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (213, 'chita', 'Transportes Urbanos de Alcobaça');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (214, 'toma', 'TOMA - Caldas da Raínha');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (215, 'mobi', 'Mobi Óbidos');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (216, 'cup', 'Circuito Urbano de Peniche');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (217, 'scalabus', 'Transportes Urbanos de Santarém');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (218, 'gira-batalha', 'Gira Batalha');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (221, 'tut-tomar', 'Transportes Urbanos de Tomar');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (222, 'tut-torres-novas', 'Transportes Urbanos Torrejanos');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (219, 'tua-abrantes', 'Transportes Urbanos de Abrantes');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (220, 'tuc-cartaxo', 'Transporte Urbano do Cartaxo');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (223, 'smat', 'SMAT Portalegre');".format('agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (224, 'metro-mirandela', 'Metro Ligeiro de Mirandela');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (225, 'tug-guarda', 'Transportes Urbanos da Guarda');".format(
+                'agencies')),
+        migrations.RunSQL(
+            "INSERT INTO {0}_agency (id, slug, name) VALUES (226, 'tribus', 'Transporte a Pedido TRIBUS');".format(
+                'agencies')),
     ]
