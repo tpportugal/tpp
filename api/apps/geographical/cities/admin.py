@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from api.apps.cities.models import City
+from .models import City
 
 
 @admin.register(City)

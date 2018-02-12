@@ -14,6 +14,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='city',
             name='district',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='cities', to='districts.District'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, related_name='cities', to='geographical.districts.District'),
         ),
     ]

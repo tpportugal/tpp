@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import SlugField, CharField, ForeignKey
 
-from api.apps.districts.models import District
+from api.apps.geographical.districts.models import District
 
 
 class City(models.Model):
