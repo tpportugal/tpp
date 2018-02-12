@@ -1,6 +1,7 @@
 from .settings import *
 
 DEBUG = True
+GRAPHQL_EDITOR = True
 ADMINS = []
 ALLOWED_HOSTS = ['0.0.0.0']
 #INSTALLED_APPS.append('debug_toolbar')
