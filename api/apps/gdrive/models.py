@@ -1,6 +1,6 @@
 from django.db import models
 
-from api.apps.companies.models import Company
+from api.apps.agencies.models import Agency
 
 
 class Timetable(models.Model):
@@ -8,4 +8,4 @@ class Timetable(models.Model):
     map_name = models.CharField(max_length=200)
     map_data = models.FileField(upload_to='maps', verbose_name="Ficheiro")
     # Training Data
-    company = models.ForeignKey(Company, models.DO_NOTHING)
+    agency = models.ForeignKey(Agency, models.DO_NOTHING)

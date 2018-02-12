@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('companies', '0001_initial'),
+        ('agencies', '0001_initial'),
     ]
 
     operations = [
@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(primary_key=True, serialize=False)),
                 ('map_name', models.CharField(max_length=200)),
                 ('map_data', models.FileField(upload_to='maps')),
-                ('company', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='companies.Company')),
+                ('agency', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='agencies.Agency')),
             ],
         ),
     ]

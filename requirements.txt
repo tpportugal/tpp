@@ -1,6 +1,6 @@
 Django==2.0
 django-filter>=1.1.0
-djangorestframework==3.7.3
+django-debug-toolbar
 redis==2.10.6
 celery==4.1.0
 psycopg2==2.7.3.2

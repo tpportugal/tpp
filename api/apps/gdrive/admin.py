@@ -6,4 +6,4 @@ from api.apps.gdrive.models import Timetable
 
 @admin.register(Timetable)
 class GdriveAdmin(admin.ModelAdmin):
-    list_display = ['company', 'map_data']
+    list_display = ['agency', 'map_data']
