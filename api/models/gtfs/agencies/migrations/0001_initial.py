@@ -19,4 +19,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=50)),
             ],
         ),
+        migrations.RunSQL(
+            "INSERT INTO {0}_city (slug, name, district_id) SELECT 'abrantes' as slug, 'Abrantes' as name, district.id FROM districts_district as district WHERE district.slug = 'santarem';".format(
+                'cities')),
     ]

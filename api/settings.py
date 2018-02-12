@@ -18,7 +18,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'api.models.geographical.districts',
     'api.models.geographical.cities',
-    'api.models.agencies',
+    'api.models.gtfs.agencies',
     'api.models.gdrive',
 ]
 

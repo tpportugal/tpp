@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelChoiceField, FileInput
 
-from api.models.agencies.models import Agency
+from api.models.gtfs.agencies.models import Agency
 from api.models.gdrive.models import Timetable
 
 

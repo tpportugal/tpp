@@ -1,6 +1,6 @@
 from django.db import models
 
-from api.models.agencies.models import Agency
+from api.models.gtfs.agencies.models import Agency
 
 
 class Timetable(models.Model):
