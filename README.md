@@ -11,15 +11,15 @@
 https://github.com/glaand/tpp/blob/master/CONTRIBUTING.md
 
 ### Introdução
-A intenção deste projeto é fornecer uma interface comum para o sistema de transporte públicos em Portugal.
+A intenção deste projecto é fornecer uma interface comum para o sistema de transporte públicos em Portugal.
 
-O projeto consiste em 3 sub-projetos:
+O projecto consiste em 3 sub-projectos:
  - Modelo entidade relacionamento
  - Lógica de negócio
  - Saída de dados
 
 ### Dados iniciais / Migrações
-Os dados iniciais disponíveis neste projeto depois das migrações são:
+Os dados iniciais disponíveis neste projecto depois das migrações são:
  - Todos os distritos de Portugal
  - Todas as cidades de Portugal
 
@@ -43,7 +43,7 @@ git clone --recurse-submodules git@github.com:glaand/tpp.git
 #HTTPS
 git clone --recurse-submodules https://github.com/glaand/tpp.git
 ```
-- Entrem na pasta, façam a migração do projeto e iniciem a aplicação.
+- Entrem na pasta, façam a migração do projecto e iniciem a aplicação.
 
 ```
 cd tpp/
@@ -51,13 +51,18 @@ docker-compose run --rm web python manage.py migrate
 docker-compose up
 ```
 
-Depois de o projeto estar up & running, podem aceder à aplicação usando uns dos endereços dados no tópico *Saída de dados*
+Depois de o projecto estar construído e a correr, podem aceder à aplicação usando uns dos endereços dados no tópico *Saída de dados*:
 
 ### Saída de dados
 
 #### Visão geral da API
+
 http://0.0.0.0:8000
+
 #### API em formato de JSON
+
 http://0.0.0.0:8000/?format=json
+
 #### API em formato de GraphQL
+
 http://0.0.0.0:8000/graphql/
