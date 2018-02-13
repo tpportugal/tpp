@@ -37,7 +37,7 @@ Para que possamos garantir a funcionalidade da aplicação, é importante correr
 
 Aqui seguimos o estilo de código recomendado pela Django que é `pep8`
 
-Temos um ficheiro na raíz do projeto chamado de `qa_check.sh`. Corram esse ficheiro e façam as alterações visuais sugeridas pelo `flake8`. Caso verifiques que não tem sentido nenhum fazer a alteração sugerida pelo flake8, exclui o ficheiro da verificação. Podes fazer isso introduzindo o **selector** do nome do ficheiro no ficheiro: `setup.cfg`. Faz essa alteração no seguinte branch: `coding-style`. Se o branch ainda não existir, podes criá-lo.
+Temos um ficheiro na raíz do projeto chamado de `qa_check.sh`. Corram esse ficheiro e façam as alterações visuais sugeridas pelo [`flake8`](http://flake8.pycqa.org/en/latest/). Caso verifiques que não tem sentido nenhum fazer a alteração sugerida pelo flake8, exclui o ficheiro da verificação. Podes fazer isso introduzindo o **selector** do nome do ficheiro no ficheiro: `setup.cfg`. Faz essa alteração no seguinte branch: `coding-style`. Se o branch ainda não existir, podes criá-lo.
 
 ### Introdução dos teus dados no AUTHORS.md
 
