@@ -1,3 +1,3 @@
 Authors
 =======
-* André Glatzl (https://github.com/glaand, andre@glatzl.me)
+* André Glatzl ([glaand](https://github.com/glaand), andre@glatzl.me)
