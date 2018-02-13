@@ -2,15 +2,17 @@ language: python
 sudo: enabled
 
 script:
+  - docker-compose -f docker-compose.development.yml build 
   - docker-compose -f docker-compose.development.yml run -rm web python manage.py test 
 
 group: "stable"
 dist: "xenial"
 os: "linux"
 
-notifications:
-  email:
-    recipients:
-      - andre@glatzl.me
-    on_success: change
-    on_failure: always
+# TODO Work on notifications for recipient who pushes to repository
+#notifications:
+#  email:
+#    recipients:
+#      - andre@glatzl.me
+#    on_success: change
+#    on_failure: always
