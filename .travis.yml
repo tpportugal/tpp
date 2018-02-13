@@ -1,4 +1,7 @@
-language: python
+language: python3
+python:
+  - "3.6"
+  
 sudo: enabled
 
 script:
