@@ -7,3 +7,10 @@ script:
 group: "stable"
 dist: "xenial"
 os: "linux"
+
+notifications:
+  email:
+    recipients:
+      - andre@glatzl.me
+    on_success: change
+    on_failure: always
