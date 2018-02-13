@@ -7,6 +7,9 @@
 
 **[Slack](https://join.slack.com/t/tpportugal/shared_invite/enQtMzEwOTI3ODg0MDk2LTZmNjYxOWVmZTBkN2EwNWUzMGFhOGQ2MWM0YmQ4NGUxMTU1ZjcwMDQxMDljMzU0Njg0ODcwOGIyODUxMjIzNmI)**
 
+### Guião de contribuição para este projeto
+https://github.com/glaand/tpp/blob/master/CONTRIBUTING.md
+
 ### Introdução
 A intenção deste projeto é fornecer uma interface comum para o sistema de transporte públicos em Portugal.
 
