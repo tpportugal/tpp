@@ -6,8 +6,8 @@ sudo: enabled
 
 script:
   - docker-compose -f docker-compose.development.yml build 
-  - docker-compose run -rm web python manage.py test
-  
+  - docker-compose -f docker-compose.development.yml run --rm web python manage.py test
+
 group: "stable"
 dist: "xenial"
 os: "linux"
