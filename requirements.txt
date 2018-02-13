@@ -8,3 +8,4 @@ gunicorn==19.7.1
 pdfquery==0.4.3
 graphene-django>=2.0
 graphene>=2.0.1
+flake8
