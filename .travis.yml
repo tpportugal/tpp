@@ -4,18 +4,53 @@ python:
 
 sudo: enabled
 
+env:
+  - DOCKER_COMPOSE_VERSION=1.19.0
+
+before_install:
+  # update is required to update the repositories to see the new packages for
+  # Docker.
+  - sudo apt-get update
+
+  # Now we can install the newer docker-engine which is required for the newer
+  # docker-composer we will install next. The messy options are to force it to
+  # be non-interactive (normally it asks you a bunch of config questions).
+  - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-ce
+
+  # Let's stop postgresql
+  - sudo service postgresql stop
+  # wait for postgresql to shutdown
+  - while sudo lsof -Pi :5432 -sTCP:LISTEN -t; do sleep 1; done
+
+  # Print out the current docker-compose version. Once this reports 1.6+ then we
+  # do not need the following steps.
+  - docker-compose --version
+
+  # As of the writing of this script Travis has docker-compose v1.4.2, we need
+  # to update it to 1.8+. $DOCKER_COMPOSE_VERSION is provide from the `env`
+  # above.
+  - sudo rm /usr/local/bin/docker-compose
+
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+  # Check that docker-compose is now running the latest version (or at least the
+  # one we specified). This is not to be confused with the version we printed
+  # before doing the update.
+  - docker-compose --version
+
+  # Setup your application stack. You may need to tweak these commands if you
+  # doing out-of-the-ordinary docker-compose builds.
+  - docker-compose -f docker-compose.development.yml pull
+  - docker-compose -f docker-compose.development.yml build
+  - docker-compose -f docker-compose.development.yml up -d
+  - docker-compose -f docker-compose.development.yml run --rm web python manage.py migrate
+
+  # You will want this for logging. If one of your containers does not build for
+  # whatever reason it's best to report that now before your tests start
+  # otherwise it can be really tricky to debug why tests are failing sometimes.
+  - docker ps
+
 script:
-  - docker-compose -f docker-compose.development.yml build 
-  - docker-compose -f docker-compose.development.yml run --rm web python manage.py test
-
-group: "stable"
-dist: "xenial"
-os: "linux"
-
-# TODO Work on notifications for recipient who pushes to repository
-#notifications:
-#  email:
-#    recipients:
-#      - andre@glatzl.me
-#    on_success: change
-#    on_failure: always
+  - docker-compose -f docker-compose.development.yml build
