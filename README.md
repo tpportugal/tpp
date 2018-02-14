@@ -1,6 +1,8 @@
 # TPP API
 #### Aplicação para unificar os transportes públicos de Portugal
 
+[![Build Status](https://travis-ci.org/glaand/tpp.svg?branch=master)](https://travis-ci.org/glaand/tpp)
+
 ***
 
 #### Canais de comunicação 
