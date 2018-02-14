@@ -53,4 +53,4 @@ before_install:
   - docker ps
 
 script:
-  - docker-compose -f docker-compose.development.yml build
+  - docker-compose -f docker-compose.development.yml run --rm web python manage.py test
