@@ -54,3 +54,5 @@ before_install:
 
 script:
   - docker-compose -f docker-compose.development.yml run --rm web python manage.py test
+  - docker-compose -f docker-compose.development.yml run --rm web coverage run --source='.' manage.py test
+  - docker-compose -f docker-compose.development.yml run --rm web coveralls
