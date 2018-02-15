@@ -17,8 +17,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'api.models.geographical.districts',
-    'api.models.geographical.cities',
+    'api.models.geographical.counties',
+    'api.models.geographical.places',
     'api.models.gtfs.agencies',
+    'api.models.gtfs.calendardates',
+    'api.models.gtfs.routes',
+    'api.models.gtfs.services',
+    'api.models.gtfs.stops',
+    'api.models.gtfs.stoptimes',
+    'api.models.gtfs.trips',
     'api.models.gdrive',
 ]
 
