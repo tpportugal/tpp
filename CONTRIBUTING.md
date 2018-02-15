@@ -27,9 +27,9 @@ Para que possamos garantir a funcionalidade da aplicação, é importante correr
 
 * Para correr os testes através de django executa o commando correspondente ao teu Environment:
     * Para Production-Environment:
-        `docker-compose run -rm web python manage.py test`
+        `docker-compose run --rm web python manage.py test`
     * Para Development-Environment:
-        `docker-compose -f docker-compose.development.yml run -rm web python manage.py test`
+        `docker-compose -f docker-compose.development.yml run --rm web python manage.py test`
 
 * Certifica-te que a característica soluciona realmente o problema em questão.
 
