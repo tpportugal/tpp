@@ -1,8 +1,8 @@
 from django.contrib import admin
 
-from .models import City
+from .models import County
 
 
-@admin.register(City)
-class CityAdmin(admin.ModelAdmin):
+@admin.register(County)
+class CountyAdmin(admin.ModelAdmin):
     list_display = ['slug', 'name', 'district']
