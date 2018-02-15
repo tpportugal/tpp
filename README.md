@@ -45,13 +45,14 @@ git clone --recurse-submodules git@github.com:glaand/tpp.git
 #HTTPS
 git clone --recurse-submodules https://github.com/glaand/tpp.git
 ```
-- Entrem na pasta, façam a migração do projecto e iniciem a aplicação.
+- Entrem na pasta e executem o script `set_deployment.sh`, da seguinte forma:
 
-```
+```bash
 cd tpp/
-docker-compose run --rm web python manage.py migrate
-docker-compose up
+sudo bash set_development.sh
 ```
+
+O script instala o Docker e o Docker Compose, faz a migração do projecto e inicia a aplicação.
 
 Depois de o projecto estar construído e a correr, podem aceder à aplicação usando uns dos endereços dados no tópico *Saída de dados*:
 
