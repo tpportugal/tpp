@@ -45,15 +45,15 @@ git clone --recurse-submodules https://github.com/glaand/tpp.git
 
 ```bash
 cd tpp/
-sudo bash set_development.sh
+bash set_development.sh
 ```
 
-O script instala o Docker e o Docker Compose, faz a migração do projecto e inicia a aplicação.
+O script faz a migração do projecto.
 
-Para inicial a aplicação, sem voltar a instalar todas as dependências, escreve no terminal, dentro da pasta `tpp`:
+Para iniciar a aplicação, sem voltar a instalar todas as dependências, escrevam no terminal, dentro da raiz do projecto:
 
 ```bash
-sudo bash start_development.sh
+bash start_development.sh
 ```
 
 Depois de o projecto estar construído e a correr, podem aceder à aplicação usando uns dos endereços dados no tópico *Saída de dados*:
