@@ -50,6 +50,12 @@ sudo bash set_development.sh
 
 O script instala o Docker e o Docker Compose, faz a migração do projecto e inicia a aplicação.
 
+Para inicial a aplicação, sem voltar a instalar todas as dependências, escreve no terminal, dentro da pasta `tpp`:
+
+```bash
+sudo bash start_development.sh
+```
+
 Depois de o projecto estar construído e a correr, podem aceder à aplicação usando uns dos endereços dados no tópico *Saída de dados*:
 
 ### Saída de dados
