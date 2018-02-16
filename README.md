@@ -12,7 +12,7 @@
 A intenção deste projecto é fornecer uma interface comum para o sistema de transporte públicos em Portugal.
 
 O projecto consiste em 3 sub-projectos:
- - Modelo, entidade, relacionamento
+ - Modelo entidade relacionamento
  - Lógica de negócio
  - Saída de dados
 
