@@ -55,4 +55,4 @@ Para contribuir com carregamento de horários em formato (PDF ou JPG) poderás a
 
 É necessário haver uma especificação de dados para que a integração e a manuntenção dos dados sejam eficientes. Poderão ler o documento publicado pela Google neste [link](https://developers.google.com/transit/gtfs/reference)
 
-Nem todas as empresas, infelizmente, aderem ao idealismo do **Open-Data**, isso implica que haja burocracias na obtenção de dados. Caso queiram contactar as operadoras de transporte, falem primeiro com um dos membros da administração do projeto: [glaand (André Glatzl)](mailto:andre@glatzl.me) , [Rui-Santos (Rui J Santos)](mailto:rui.s@gmx.us)
+Nem todas as empresas, infelizmente, aderem ao idealismo do **Open-Data**, isso implica que haja burocracias na obtenção de dados. Caso queiram contactar as operadoras de transporte, falem primeiro com um dos membros da administração do projeto: [glaand (André Glatzl)](mailto:andre@glatzl.me), [Rui-Santos (Rui J Santos)](mailto:rui.s@gmx.us), [VitorSantos1 (Vítor Santos)](mailto:vitorhgsantos90@gmail.com).
