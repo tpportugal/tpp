@@ -9,13 +9,15 @@ GRAPHQL_EDITOR = True
 
 ALLOWED_HOSTS = ['0.0.0.0']
 
-INSTALLED_APPS = [
+INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
+    'django_extensions',
     'graphene_django',
     'api.models.geographical.districts',
     'api.models.geographical.counties',
@@ -28,8 +30,7 @@ INSTALLED_APPS = [
     'api.models.gtfs.stoptimes',
     'api.models.gtfs.trips',
     'api.models.gdrive',
-    'debug_toolbar'
-]
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

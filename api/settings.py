@@ -8,7 +8,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['tpp.pt', 'www.tpp.pt']
 
-INSTALLED_APPS = [
+INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'api.models.gtfs.stoptimes',
     'api.models.gtfs.trips',
     'api.models.gdrive',
-]
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

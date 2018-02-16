@@ -16,6 +16,7 @@ services:
     ports:
      - 8000:8000
     environment:
+     DJANGO_SETTINGS_MODULE: api.settings_development
      DEBUG: 'true'
     restart: always
   celery:
