@@ -8,7 +8,7 @@ Queremos que desenvolvas características do projeto que te entusiasmem!!!
 
 Se ficares preso em qualquer ponto, estás à vontade para criar um Issue no GitHub.
 
-Todos os membros da nossa comunidade são obrigados a seguir o nosso [código de conduta](https://github.com/glaand/tpp/blob/master/CODE_OF_CONDUCT.md). Certifica-te que és acolhedor e amigável em todos os nossos espaços.
+Todos os membros da nossa comunidade são obrigados a seguir o nosso [código de conduta](https://github.com/tpportugal/tpp/blob/master/CODE_OF_CONDUCT.md). Certifica-te que és acolhedor e amigável em todos os nossos espaços.
 
 Abaixo estão algums recursos importantes para quem começa:
 
@@ -17,7 +17,7 @@ Abaixo estão algums recursos importantes para quem começa:
 
 ## Contribuir no desenvolvimento
 
-Se quiseres mergulhar profundamente e ajudar com o desenvolvimento do TPP, instala primeiro o projeto localmente de acordo com o nosso [Guia de Instalação](https://github.com/tpportugal/tpp/blob/master/README.md). Depois disso, sugerimos que vejas os Issues no nosso [Issue Tracker](https://github.com/glaand/tpp/issues) que estejam marcados como `Good First Issue`. Estes Issues são ótimos para teres um começo suave e não te colocam em frente ás partes mais complexas do sistema.
+Se quiseres mergulhar profundamente e ajudar com o desenvolvimento do TPP, instala primeiro o projeto localmente de acordo com o nosso [Guia de Instalação](https://github.com/tpportugal/tpp/blob/master/README.md). Depois disso, sugerimos que vejas os Issues no nosso [Issue Tracker](https://github.com/tpportugal/tpp/issues) que estejam marcados como `Good First Issue`. Estes Issues são ótimos para teres um começo suave e não te colocam em frente ás partes mais complexas do sistema.
 
 Se quiseres trabalhar em tarefas mais desafiadoras, então segue os seguintes marcadores: `data`, `feature`, `bug`. Estes Issues têm uma visão geral e descrição do pretendido. Este tipo de Issues serão os ideais para começares. Dito isto, estes não são necessariamente os Issues mais fáceis.
 
