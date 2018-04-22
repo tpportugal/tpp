@@ -16,7 +16,7 @@ Para que a aplicação possa mostrar a melhor rota entre o ponto A e o ponto B �
 
 ## Obtenção de dados
 
-Geralmente por canais digitais onde as operadoras têm os seus dados publicados. Haverá casos em que as operadoras não tem horários em formatos digitais, aí teremos que fazer uma digitalização dos horários e aplicar um algoritmo de reconhecimento de padrões que extraia os dados por nós, isto para evitar erros humanos na introdução de dados
+Geralmente por canais digitais onde as operadoras têm os seus dados publicados. Haverá casos em que as operadoras não têm horários em formato digital, aí teremos que fazer uma digitalização dos horários e aplicar um algoritmo de reconhecimento de padrões que extraia os dados por nós, isto para evitar erros humanos na introdução de dados
 
 # Serviços
 
