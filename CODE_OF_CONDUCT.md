@@ -34,7 +34,7 @@ Este Código de Conduta aplica-se tanto nos espaços do projeto quanto nos espa�
 
 ## Cumprimento
 
-As instâncias de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser relatadas ao contactar a equipa do projeto em andre@glatzl.me. A equipa do projeto irá rever e investigar todas as queixas, e responderá da forma que julgar apropriada ás circunstâncias. A equipa do projeto é obrigada a manter a confidencialidade em relação ao repórter de um incidente. Mais detalhes sobre políticas de execução específicas poderão ser publicados separadamente.
+As instâncias de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser relatadas ao contactar a equipa do projeto. A equipa do projeto irá rever e investigar todas as queixas, e responderá da forma que julgar apropriada ás circunstâncias. A equipa do projeto é obrigada a manter a confidencialidade em relação ao repórter de um incidente. Mais detalhes sobre políticas de execução específicas poderão ser publicados separadamente.
 
 Os mantedores do projeto que não sigam ou apliquem o Código de Conduta de boa fé poderão enfrentar repercussões temporárias ou permanentes, conforme determinado pelos membros da liderança do projeto.
 
