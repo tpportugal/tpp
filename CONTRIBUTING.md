@@ -1,5 +1,7 @@
 # Contribuir para o TPP
 
+**Read this in other languages**: [English](https://github.com/tpportugal/tpp/blob/master/CONTRIBUTING_EN.md)
+
 :+1: :tada: Primeiramente, um grande obrigado pela tua contribuição com o teu tempo! :tada: :+1:
 
 Se ainda não te juntaste ao nosso canal de comunicação Slack, poderás fazê-lo [aqui!](https://join.slack.com/t/tpportugal/shared_invite/enQtMzEwOTI3ODg0MDk2LTZmNjYxOWVmZTBkN2EwNWUzMGFhOGQ2MWM0YmQ4NGUxMTU1ZjcwMDQxMDljMzU0Njg0ODcwOGIyODUxMjIzNmI)
@@ -25,23 +27,17 @@ Se quiseres trabalhar em tarefas mais desafiadoras, então segue os seguintes ma
 
 Para que possamos garantir a funcionalidade da aplicação, é importante correr vários testes no software para anular a possibilidade de erros lógicos.
 
-* Para correr os testes através de django executa o commando correspondente ao teu Environment:
-    * Para Production-Environment:
-        `docker-compose run --rm web python manage.py test`
-    * Para Development-Environment:
-        `docker-compose -f docker-compose.development.yml run --rm web python manage.py test`
+* Cada serviço terá no seu repositório um ficheiro markdown **TESTING.md** para vos explicar de como testar o serviço.
 
 * Certifica-te que a característica soluciona realmente o problema em questão.
 
 ### Estilo de código (Coding style)
 
-Aqui seguimos o estilo de código recomendado pela Django que é `pep8`.
-
-Temos um ficheiro na raíz do projeto chamado `qa_check.sh`. Executa esse ficheiro e faz as alterações visuais sugeridas pelo [`flake8`](http://flake8.pycqa.org/en/latest/). Caso verifiques que não tem sentido nenhum fazer a alteração sugerida pelo flake8, exclui o ficheiro da verificação. Podes fazer isso introduzindo o **selector** do nome do ficheiro no ficheiro: `setup.cfg`. Faz essa alteração no seguinte branch: `coding-style`. Se o branch ainda não existir, podes criá-lo.
+* Cada serviço terá no seu repositório um ficheiro markdown **STYLING.md** para vos explicar de como seguir o coding style do projeto.
 
 ### Introdução dos teus dados no AUTHORS.md
 
-Se for o teu primeiro commit, adiciona o teu nome e contacto no ficheiro [AUTHORS.md](https://github.com/tpportugal/tpp/blob/master/AUTHORS.md)
+Se for o teu primeiro commit em qualquer repositório, adiciona o teu nome e contacto no ficheiro [AUTHORS.md](https://github.com/tpportugal/tpp/blob/master/AUTHORS.md)
 
 ---
 
@@ -55,4 +51,4 @@ Para contribuir com carregamento de horários em formato (PDF ou JPG) poderás a
 
 É necessário haver uma especificação de dados para que a integração e a manuntenção dos dados sejam eficientes. Poderão ler o documento publicado pela Google neste [link](https://developers.google.com/transit/gtfs/reference)
 
-Nem todas as empresas, infelizmente, aderem ao idealismo do **Open-Data**, isso implica que haja burocracias na obtenção de dados. Caso queiram contactar as operadoras de transporte, falem primeiro com um dos membros da administração do projeto: [glaand (André Glatzl)](mailto:andre@glatzl.me), [Rui-Santos (Rui J Santos)](mailto:rui.s@gmx.pt), [VitorSantos1 (Vítor Santos)](mailto:vitorhgsantos90@gmail.com).
+Nem todas as empresas, infelizmente, aderem ao idealismo do **Open-Data**, isso implica que haja burocracias na obtenção de dados. Caso queiram contactar as operadoras de transporte, falem primeiro com um dos membros da administração do projeto: [glaand (André Glatzl)](mailto:andre@tpp.pt), [Rui-Santos (Rui J Santos)](mailto:rui@tpp.pt), [VitorSantos1 (Vítor Santos)](mailto:vitor@tpp.pt).
