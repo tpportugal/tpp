@@ -1,104 +1,29 @@
-# TPP API
-#### Aplicação para unificar os transportes públicos de Portugal
+# TPP
+#### Projeto para unificar os transportes públicos de Portugal
 
 [![Guia de Contribuição](https://img.shields.io/badge/%E2%9D%A4-Guia%20de%20contribui%C3%A7%C3%A3o-blue.svg)](https://github.com/tpportugal/tpp/blob/master/CONTRIBUTING.md)
-[![Build Status](https://travis-ci.org/tpportugal/tpp.svg?branch=master)](https://travis-ci.org/tpportugal/tpp)
 [![Canal de Comunicação](https://img.shields.io/badge/Canal%20de%20Comunica%C3%A7%C3%A3o-Slack-orange.svg)]((https://join.slack.com/t/tpportugal/shared_invite/enQtMzEwOTI3ODg0MDk2LTZmNjYxOWVmZTBkN2EwNWUzMGFhOGQ2MWM0YmQ4NGUxMTU1ZjcwMDQxMDljMzU0Njg0ODcwOGIyODUxMjIzNmI))
-[![Coverage Status](https://coveralls.io/repos/github/tpportugal/tpp/badge.svg?branch=master)](https://coveralls.io/github/tpportugal/tpp?branch=master)
 
 ***
 
-### Introdução
-A intenção deste projecto é fornecer uma interface comum para o sistema de transporte públicos em Portugal.
+## Finalidade
 
-O projecto consiste em 3 sub-projectos:
- - Modelo entidade relacionamento
- - Lógica de negócio
- - Saída de dados
+Este projeto pretende unificar todos os transportes públicos de Portugal numa única aplicação, isto é, a unificação de meios de transporte, horários e rotas num único sistema para que o utilizador, neste caso, o viajante consiga mover-se em Portugal com maior facilidade apenas introduzindo o local de partida e o local de chegada.
 
-### Dados iniciais / Migrações
-Os dados iniciais disponíveis neste projecto depois das migrações são:
- - Todos os distritos de Portugal
- - Todas as cidades de Portugal
+## Funcionamento
 
+Para que a aplicação possa mostrar a melhor rota entre o ponto A e o ponto B é necessário ter em nossa posse vários tipos de dados como: Regiões, Rotas, Meios de transporte, Operadoras de transporte e Horários. A partir destes dados o nosso algoritmo conseguirá calcular a rota mais eficiente para o utilizador, isto é, que tenha o menor número de mudanças de linha, como também a duração da viagem. Obviamente é necessário também que os dados estejam atualizados conforme comunicado pelas operadoras.
 
-### Requisitos
+## Obtenção de dados
 
-```
-docker >= 2
-docker-compose >= 1.18
-```
+Geralmente por canais digitais onde as operadoras têm os seus dados publicados. Haverá casos em que as operadoras não tem horários em formatos digitais, aí teremos que fazer uma digitalização dos horários e aplicar um algoritmo de reconhecimento de padrões que extraia os dados por nós, isto para evitar erros humanos na introdução de dados
 
-### Instalação
-Sigam as instruções de comandos dadas abaixo:
+# Serviços
 
-- Façam um clone do repositório (SSH ou HTTPS)
-
-```
-# SSH
-git clone --recurse-submodules git@github.com:tpportugal/tpp.git
-# ou
-#HTTPS
-git clone --recurse-submodules https://github.com/tpportugal/tpp.git
-```
-- Entrem na pasta `tpp` e executem o script `set_deployment.sh`, da seguinte forma:
-
-```bash
-cd tpp/
-bash set_development.sh
-```
-
-O script faz a migração do projecto.
-
-Para iniciar a aplicação, sem voltar a instalar todas as dependências, escrevam no terminal, dentro da raiz do projecto:
-
-```bash
-bash start_development.sh
-```
-
-Depois de o projecto estar construído e a correr, podem aceder à aplicação usando uns dos endereços dados no tópico *Saída de dados*:
-
-### Criação de utilizador
-
-Para aceder a plataforma em ambiente de desenvolvimento, é necessário criar primeiro um _superuser_, para tal basta executar o seguinte commando:
-
-```
-bash create_superuser.sh
-```
-
-### Error logging
-
-Para captarem os erros do projeto, recomendamos que utilizem o serviço **Sentry**.
-A aplicação da [Sentry](https://sentry.io), `Raven` já se encontra instalada, basta definirem a seguinte Environment variable (variável do ambiente) com o vosso DSN:
-- **Atenção**: apenas se encontra configurado para **production**
-```
-export SENTRY_DNS=vosso_dsn
-```
-
-### Importar todos os distritos de Portugal
-
-Para importarem todos os distritos corram este comando:
-```
-docker-compose... python manage.py import_districts
-```
-
-### Importar todos os concelhos de Portugal
-
-Para importarem todos os concelhos corram este comando:
-```
-docker-compose... python manage.py import_counties
-```
-
-### Saída de dados
-
-#### Visão geral da API
-
-http://0.0.0.0:8000
-
-#### API em formato de JSON
-
-http://0.0.0.0:8000/?format=json
-
-#### API em formato de GraphQL
-
-http://0.0.0.0:8000/graphql/
+**Valhalla** [Motor de rotas] - https://github.com/tpportugal/tpp_valhalla  
+**Banco de dados** [API do serviço web centralizado TPP] - https://github.com/tpportugal/tpp_banco_de_dados  
+**Explorador** [Explorador de redes de transportes em Portugal] - https://github.com/tpportugal/tpp_explorador  
+**APP** [Frontend para o serviço TPP] - https://github.com/tpportugal/tpp_app  
+**Expedidor** [Administrador do Backend do Banco de Dados] - https://github.com/tpportugal/tpp_expedidor  
+**Registo de feeds** [Diretoria de feeds de operadoras] - https://github.com/tpportugal/tpp_registo_de_feeds  
+**Admin** [Projeto Django TPP Admin management] - https://github.com/tpportugal/tpp_admin  
