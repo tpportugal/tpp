@@ -1,4 +1,4 @@
-# Contribuir para o TTP
+# Contribuir para o TPP
 
 :+1: :tada: Primeiramente, um grande obrigado pela tua contribuição com o teu tempo! :tada: :+1:
 
