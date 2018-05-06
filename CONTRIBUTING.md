@@ -45,7 +45,7 @@ Se for o teu primeiro commit em qualquer repositório, adiciona o teu nome e con
 
 Com centenas de operadoras de transportes públicos, também vamos precisar da tua ajuda na recolha de dados. Certifica-te que os dados recolhidos estejam disponíveis ao público.
 
-Para contribuir com carregamento de horários em formato (PDF ou JPG) poderás aceder este link e preencher o formulário: https://www.tpp.pt/upload
+Para contribuir com carregamento de horários em formato (PDF ou JPG) entra na plataforma Brutus e segue as indicações de lá: https://brutus.tpp.pt/
 
 ### Obtenção dos dados das operadoras em formato GTFS
 
