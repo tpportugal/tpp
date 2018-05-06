@@ -15,7 +15,7 @@ Todos os membros da nossa comunidade são obrigados a seguir o nosso [código de
 Abaixo estão algums recursos importantes para quem começa:
 
  - [Conceito do TPP](https://github.com/tpportugal/tpp/wiki/TPP---Conceito)
- - [O nosso Roadmap](https://github.com/tpportugal/tpp/wiki/Roadmap)
+ - [O nosso Roadmap](https://github.com/tpportugal/tpp/issues/61)
 
 ## Contribuir no desenvolvimento
 
