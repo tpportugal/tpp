@@ -4,7 +4,7 @@
 
 :+1: :tada: First of all, a big thanks for your contribution with your time! :tada: :+1:
 
-If you have not yet joined our Slack communication channel, you can do it [here!](https://join.slack.com/t/tpportugal/shared_invite/enQtMzEwOTI3ODg0MDk2LTZmNjYxOWVmZTBkN2EwNWUzMGFhOGQ2MWM0YmQ4NGUxMTU1ZjcwMDQxMDljMzU0Njg0ODcwOGIyODUxMjIzNmI)
+If you have not yet joined our Gitter communication channel, you can do it [here!](https://gitter.im/tpportugal/Geral)
 
 We want you to develop design features that excites you.!!!
 
