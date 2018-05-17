@@ -2,7 +2,7 @@
 #### Projeto para unificação informativa dos transportes públicos de Portugal
 
 [![Guia de Contribuição](https://img.shields.io/badge/%E2%9D%A4-Guia%20de%20contribui%C3%A7%C3%A3o-blue.svg)](https://github.com/tpportugal/tpp/blob/master/CONTRIBUTING.md)
-[![Canal de Comunicação](https://img.shields.io/badge/Canal%20de%20Comunica%C3%A7%C3%A3o-Slack-orange.svg)]((https://join.slack.com/t/tpportugal/shared_invite/enQtMzEwOTI3ODg0MDk2LTZmNjYxOWVmZTBkN2EwNWUzMGFhOGQ2MWM0YmQ4NGUxMTU1ZjcwMDQxMDljMzU0Njg0ODcwOGIyODUxMjIzNmI))
+[![Canal de Comunicação](https://img.shields.io/badge/Canal%20de%20Comunica%C3%A7%C3%A3o-Gitter-green.svg)]((https://gitter.im/tpportugal/Geral))
 [![Administradores](https://img.shields.io/badge/Administradores-3-red.svg)](https://github.com/tpportugal/tpp/blob/master/ADMINS.md) 
   
 **Read this in other languages**: [English](https://github.com/tpportugal/tpp/blob/master/README_EN.md)
